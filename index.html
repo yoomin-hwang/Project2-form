@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2 Form</title>
+</head>
+<body>
+    <h4>Leave Application Form 휴가 신청서</h4><br>
+    <form action="form_ok.php" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        
+        <h4>Team</h4><br>
+        <select id="team" name="team">
+        <option value="HR">Human Resourc</option>
+        <option value="FA">Finance and Accounting</option>
+        <option value="CS">Customer Satisfaction</option>
+        <option value="M">Marketing</option><br><br>
+        </select>
+
+        <h4>Position</h4><br>
+        <input type="radio" id="CEO" name="position" value="CEO">
+        <label for="CEO">CEO</label><br>
+        <input type="radio" id="GM" name="position" value="General Manager">
+        <label for="GM">General Manager</label><br>
+        <input type="radio" id="AM" name="position" value="Assistant Manager">
+        <label for="AM">Assistant Manager</label><br><br>
+
+        <h4>Reason</h4><br>
+        <input type="checkbox" id="family" name="reason1" value="Family Issue">
+        <label for="family">Family Issue</label><br>
+        <input type="checkbox" id="national" name="reason2" value="National Holiday">
+        <label for="national">National Holiday</label><br>
+        <input type="checkbox" id="sick" name="reason3" value="Sick Leave">
+        <label for="sick">Sick Leave</label><br><br>
+
+        <label for="sdate">Start date:</label>
+        <input type="date" id="sdate" name="sdate">
+
+        <label for="edate">End date:</label>
+        <input type="date" id="edate" name="edate">
+
+        <textarea name="niceTrip" row="10" cols="30">
+            Have a nice trip!
+        </textarea>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
